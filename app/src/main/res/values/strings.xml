@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Sample Hosted App</string>
+    <string name="amount">Amount <font color='#FF0000'>*</font></string>
+    <string name="country">Country <font color='#FF0000'>*</font></string>
+    <string name="currency">Currency <font color='#FF0000'>*</font></string>
+    <string name="address">Address</string>
+    <string name="city">City </string>
+    <string name="email">Email<font fgcolor="red">*</font></string>
+    <!--   <string name="cardoperation">cardoperation<font fgcolor="red">*</font></string>-->
+    <string name="cardoperation">cardoperation</string>
+    <string name="TransactionType">TransactionType<font fgcolor="red">*</font></string>
+    <string name="zip">Zip</string>
+    <string name="udf1">Udf 1</string>
+    <string name="udf2">Udf 2</string>
+    <string name="udf3">Udf 3</string>
+    <string name="udf4">Udf 4</string>
+    <string name="udf5">Udf 5</string>
+    <string name="State">State</string>
+    <string name="transid">Trans ID<font fgcolor="red">*</font>(Refund Transaction)</string>
+    <string name="cardtoken">Card Token</string>
+    <string name="metadata">Metadata Json Parameter<font fgcolor="red"></font></string>
+    <string name="channelId">Channel ID<font fgcolor="red"></font></string>
+    <string name="metadataparameter" >"{"entry1":"entry1"}"</string>
+
+    <string-array name="OperationType">
+        <item>Purchase</item>
+        <item>Pre Auth</item>
+        <item>Tokenization</item>
+        <item>Refund</item>
+        <item>Void Purchase</item>
+        <item>Void Auth</item>
+        <item>Void Refund</item>
+        <item>Transaction Enquiry</item>
+<!--        <item>NetBanking</item>-->
+<!--        <item>UPI</item>-->
+<!--        <item>Wallet</item>-->
+
+
+    </string-array>
+
+    <string-array name="pip_items">
+        <item>CCI</item>
+        <item>DCI</item>
+        <item>UPI</item>
+        <item>NetBanking</item>
+    </string-array>
+
+
+    <string-array name="cardOperation">
+        <item>Select Operation</item>
+        <item>Add</item>
+        <item>Update</item>
+        <item>Delete</item>
+    </string-array>
+</resources>

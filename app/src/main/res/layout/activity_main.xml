@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="32dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/amount"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/edt_Amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="numberDecimal"
+                android:background="@drawable/border_edittext"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:text="1.00"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/email"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/edt_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border_edittext"
+                android:padding="10dp"
+                android:hint="Email"
+                android:maxLines="1"
+                android:text="John.deo@gmail.com"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/currency"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/edt_Currency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border_edittext"
+                android:hint="Currency"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:text="INR"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/address"
+                android:textSize="10sp"
+                />
+
+            <EditText
+                android:id="@+id/edt_Add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border_edittext"
+                android:hint="Address"
+                android:text="Ram Nagar Ayodhya"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/TransactionType"
+                android:textSize="10sp"
+
+                />
+
+            <Spinner
+                android:id="@+id/spnTransType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:entries="@array/OperationType"
+                android:maxLines="1"
+
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/cardoperation"
+                android:textSize="10sp"
+
+                />
+
+            <Spinner
+                android:id="@+id/spncardOperation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:entries="@array/cardOperation"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/city"
+                android:textSize="10sp"
+
+                />
+
+            <EditText
+                android:id="@+id/edt_City"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="City"
+                android:text="UK"
+                android:background="@drawable/border_edittext"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/country"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/edt_CountryCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border_edittext"
+                android:hint="CountryCode"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:text="SA"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/zip"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/edt_ZIP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border_edittext"
+                android:hint="Zip"
+                android:text="210210"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/State"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/edt_State"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border_edittext"
+                android:text="MH"
+                android:hint="@string/State"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:hint="TracKID"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/edtTrackID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border_edittext"
+
+                android:hint="Track ID"
+
+                android:maxLines="1"
+                android:padding="10dp"
+
+                android:text="1233"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/cardtoken"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/edtcardToken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spncardOperation"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border_edittext"
+                android:hint="Card Token"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/transid"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/edttransid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spncardOperation"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border_edittext"
+                android:hint="Trans ID"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/metadata"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/edtmetadata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spncardOperation"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border_edittext"
+                android:text="@string/metadataparameter"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_Pay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="PAY"
+            android:background="#ECE4E4"
+            android:textStyle="bold"
+            android:textSize="18dp"
+        />
+
+    </LinearLayout>
+</ScrollView>
